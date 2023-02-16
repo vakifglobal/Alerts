@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <info-alert
+    buttonColor="danger"
+    buttonText="Merhaba Button"
+    headerText="Bilgi"
+    messageText="Bilgi mesajı"
+    okText="Tamam"
+    cancelText="Vazgeç"
+     (onOkClick)="onOkClick($event)"
+     (onCancelClick)="onCancelClick($event)"></info-alert>
+
+    <info-alert-cancel
+    buttonColor="warning"
+    buttonText="Cancel Buttonlu"
+    headerText="Bilgi"
+    messageText="Bilgi mesajı"
+    okText="Tamam"
+    cancelText="Vazgeç"
+    [item]="deneme"
+     (onOkClick)="onOkClick($event)"
+     (onCancelClick)="onCancelClick($event)"></info-alert-cancel>
+  </div>
+</ion-content>
