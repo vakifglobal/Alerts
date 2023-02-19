@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter, Input, OnChanges } from "@angular/core";
+import { Component, Output, EventEmitter, Input} from "@angular/core";
 import { AlertController } from "@ionic/angular";
 
 @Component({
