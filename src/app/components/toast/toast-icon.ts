@@ -31,5 +31,6 @@ export class ToastIcon {
     });
 
     await toast.present();
+    
   }
 }
