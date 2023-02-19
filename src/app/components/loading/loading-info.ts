@@ -4,9 +4,7 @@ import { LoadingController, SpinnerTypes } from "@ionic/angular";
 
 @Component({
   selector: "info-loading",
-  template: `<ion-button [color]="buttonColor" (click)="showLoading()">{{
-    buttonText
-  }}</ion-button>`,
+  template: `<ion-button [color]="buttonColor" (click)="showLoading()">{{buttonText}}</ion-button>`,
 })
 export class InfoLoading {
   @Input() buttonText;
