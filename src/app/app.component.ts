@@ -29,6 +29,13 @@ export class AppComponent {
         'icon': 'information-circle',
         'singlePage': false
       },
+      {
+        'url': 'action-sheet',
+        'title': 'Action Sheet',
+        'theme': 'listViews',
+        'icon': 'layers',
+        'singlePage': false
+      },
   ]
   headerMenuItem = {
     'backgroundColor': '#000',

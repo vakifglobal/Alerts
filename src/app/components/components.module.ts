@@ -4,9 +4,10 @@ import { IonicModule } from '@ionic/angular';
 import { InfoAlert} from './alerts/info-alert';
 import { InfoAlertCancel } from './alerts/info-alert-cancel';
 import { AlertInput } from './alerts/info-alert-input';
-import { InfoLoading } from './loading/info-loading';
+import { InfoLoading } from './loading/loading-info';
 import { ToastIcon } from './toast/toast-icon';
 import { ToastCancel } from './toast/toast-cancel';
+import { DefaultActionSheet } from './action-sheet/action-sheet-default';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ToastCancel } from './toast/toast-cancel';
         AlertInput,
         InfoLoading,
         ToastIcon,
-        ToastCancel
+        ToastCancel,
+        DefaultActionSheet
     ],
     exports:[
         InfoAlert,
@@ -28,7 +30,8 @@ import { ToastCancel } from './toast/toast-cancel';
         AlertInput,
         InfoLoading,
         ToastIcon,
-        ToastCancel
+        ToastCancel,
+        DefaultActionSheet
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
