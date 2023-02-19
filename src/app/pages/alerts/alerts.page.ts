@@ -19,7 +19,7 @@ export class AlertsPage implements OnChanges {
   }
 
   onCancelClick(params): void {
-    console.log("onOkClick",params)
+    console.log("onCancelClick",params)
    alert(1)
   }
 
