@@ -1,5 +1,4 @@
 import { Component,Input, EventEmitter, OnChanges } from '@angular/core';
-import { AlertService } from '../services/alert.service';
 
 @Component({
   selector: 'app-home',
@@ -15,15 +14,14 @@ export class HomePage implements OnChanges {
   }
 
   constructor(
-    public alertsrv:AlertService
   ) {}
 
   ngOnChanges(changes: { [propKey: string]: any }) {
   }
 
   onCancelClick(params): void {
-    console.log("onOkClick",params)
-   alert(1)
+    console.log("onCancelClick",params)
+  //  alert(1)
   }
 
   onOkClick(params): void {
