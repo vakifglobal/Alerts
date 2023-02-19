@@ -2,10 +2,10 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
 import { ToastController } from "@ionic/angular";
 
 @Component({
-  selector: "icon-toast",
+  selector: "toast-icon",
   template: `<ion-button [color]="buttonColor" (click)='presentToast()'>{{ buttonText }}</ion-button>`,
 })
-export class DefaultToast {
+export class ToastIcon {
 
   @Input() buttonText;
   @Input() buttonColor;
