@@ -18,4 +18,16 @@ toastPosition="bottom"
 toastHeader="toast header"
 icon="thumbs-up-outline"
 ></toast-icon>
+
+<toast-cancel
+buttonColor="warning"
+buttonText="cancel toast"
+messageText="toast message!"
+toastPosition="bottom"
+okText="Tamam"
+cancelText="Vazgeç"
+[item]="name"
+(onOkClick)="onOkClick($event)"
+(onCancelClick)="onCancelClick($event)">
+</toast-cancel>
 </ion-content>

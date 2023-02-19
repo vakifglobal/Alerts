@@ -6,6 +6,7 @@ import { InfoAlertCancel } from './alerts/info-alert-cancel';
 import { AlertInput } from './alerts/info-alert-input';
 import { InfoLoading } from './loading/info-loading';
 import { ToastIcon } from './toast/toast-icon';
+import { ToastCancel } from './toast/toast-cancel';
 
 
 @NgModule({
@@ -18,14 +19,16 @@ import { ToastIcon } from './toast/toast-icon';
         InfoAlertCancel,
         AlertInput,
         InfoLoading,
-        ToastIcon
+        ToastIcon,
+        ToastCancel
     ],
     exports:[
         InfoAlert,
         InfoAlertCancel,
         AlertInput,
         InfoLoading,
-        ToastIcon
+        ToastIcon,
+        ToastCancel
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
