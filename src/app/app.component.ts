@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,40 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  public appPages = [
+      {
+        'url': 'alerts',
+        'title': 'Alerts',
+        'theme': 'listViews',
+        'icon': 'alert-circle',
+        'singlePage': false
+      },
+      {
+        'url': 'loading',
+        'title': 'Loading',
+        'theme': 'listViews',
+        'icon': 'refresh-circle',
+        'singlePage': false
+      },
+      {
+        'url': 'toast',
+        'title': 'Toast',
+        'theme': 'listViews',
+        'icon': 'information-circle',
+        'singlePage': false
+      },
+  ]
+  headerMenuItem = {
+    'backgroundColor': '#000',
+    'image': 'assets/imgs/logo/vakif.png',
+    'title': 'Ionic Starter'
+  }
+
+  constructor(
+    private navController: NavController
+  ) {}
+
+  openPage(page) {
+    this.navController.navigateRoot([page.url], {});
+  }
 }
